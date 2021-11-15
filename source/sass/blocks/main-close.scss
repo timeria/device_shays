@@ -1,0 +1,10 @@
+@media (max-width: $tablet-width) {
+  .main-close {
+    background: transparent;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 0;
+    border: none;
+  }
+}

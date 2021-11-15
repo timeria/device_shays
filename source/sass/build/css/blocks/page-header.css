@@ -1,0 +1,9 @@
+.page-header {
+  padding: 35px 0; }
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between; }
+
+.page-header__right {
+  display: flex; }

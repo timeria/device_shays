@@ -1,0 +1,10 @@
+.personal {
+  display: block;
+  position: relative;
+  width: 48%; }
+
+.personal span {
+  font-size: 14px;
+  line-height: 16px;
+  color: #white;
+  opacity: 0.8; }

@@ -1,0 +1,28 @@
+.decor {
+  position: relative;
+  padding: 57px 0 0 0;
+}
+
+.decor::before {
+  @include beforeAfter;
+  width: 560px;
+  height: 486px;
+  top: 0;
+  left: -105px;
+  background: url('../img/triangl-b.png') no-repeat;
+  z-index: 1;
+}
+
+.decor::after {
+  @include beforeAfter;
+  width: 327px;
+  height: 288px;
+  bottom: 0;
+  left: -145px;
+  background: url('../img/triangl.png') no-repeat;
+  z-index: 1;
+}
+.decor__img {
+  z-index: 2;
+  position: relative;
+}

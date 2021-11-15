@@ -1,0 +1,20 @@
+.site-list__link {
+  font-size: 15px;
+  line-height: 25px;
+  color: $black;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  opacity: 1;
+}
+
+.site-list__item {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+}

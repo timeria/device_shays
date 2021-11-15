@@ -1,0 +1,11 @@
+.slider__item {
+  text-align: center;
+  display: none; }
+
+.slider__item.slider__item--active {
+  display: block; }
+
+.slider__button {
+  padding: 0;
+  background: transparent;
+  border: none; }

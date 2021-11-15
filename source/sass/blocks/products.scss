@@ -1,0 +1,126 @@
+.products {
+  background: $black;
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 0 97px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 53px 0 78px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 53px 0 64px;
+  }
+}
+
+.products__container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+.products__title {
+  color: $white;
+
+  @media (min-width: $tabletstart-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (max-width: $mobile-width) {
+     margin-bottom: 37px;
+  }
+}
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.products__item {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 31.5%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $tabletbig-width) {
+    margin-right: 49px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 45%;
+    margin-bottom: 50px;
+
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto 44px;
+
+    &:nth-child(2n + 2) {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.products__name {
+  font-size: 20px;
+  line-height: 30px;
+  color: $white;
+  margin: 0;
+  position: absolute;
+  top: 53px;
+  left: 43px;
+  text-align: left;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+}
+
+.products__arrow {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  width: 63px;
+  height: 63px;
+  background: $blue;
+}
+
+.products__arrow svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,12 @@
+.prices {
+  padding-top: 230px; }
+
+.prices__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; }
+
+.prices__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 400px); }

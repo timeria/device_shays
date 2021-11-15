@@ -1,0 +1,149 @@
+.form {
+  background: $blue;
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    padding: 94px 0 114px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 83px 0 103px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 30px 0 40px;
+  }
+}
+
+.form__container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+.form__title {
+  color: $white;
+  margin-bottom: 9px;
+}
+
+.form__wrap input {
+  width: 100%;
+  background: $input;
+  height: 50px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $black;
+  padding: 0 16px;
+  border: none;
+  transition: all 0.3s;
+
+  &::-moz-placeholder {
+    color: $white;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  &::-ms-input-placeholder {
+    color: $white;
+  }
+}
+
+.form__wrap textarea {
+  width: 100%;
+  border: none;
+  background: $input;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  padding: 13px 16px;
+  border: none;
+  transition: all 0.3s;
+
+  &::-moz-placeholder {
+    color: $white;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  &::-ms-input-placeholder {
+    color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 154px;
+    margin-bottom: 37px;
+  }
+
+  @media (max-width: $tablet-width) {
+    height: 160px;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 104px;
+    margin-bottom: 30px;
+  }
+}
+
+.form__wrap label {
+  display: none;
+}
+
+.form__wrap .personal {
+  display: block;
+}
+
+
+.form__wrap p {
+  margin: 0 0 50px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.form__top {
+  @media (min-width: $mobile-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
+.form__item {
+  width: 48%;
+}
+
+.form__wrap button {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 5px;
+  padding: 14px 0 13px;
+  width: 100%;
+  max-width: 270px;
+  cursor: pointer;
+}
+
+.form__bottom {
+  display: flex;
+  justify-content: space-between;
+}
