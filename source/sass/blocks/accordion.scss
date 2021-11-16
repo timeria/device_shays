@@ -28,25 +28,35 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 30px 25px;
+    padding: 29px 15px 29px;
   }
 }
 
-.accordion__title::after {
-  @include beforeAfter;
-  width: 16px;
-  height: 2px;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: url("../img/minus.svg") no-repeat;
-}
-
-.accordion__title.active {
-  background: url("../img/plus.svg") no-repeat;
-}
 @media (max-width: $mobile-width) {
   .accordion__content.active {
     display: block;
+  }
+
+  .accordion__content {
+    padding: 0 15px 25px;
+  }
+
+  .accordion__title::after {
+    @include beforeAfter;
+    width: 16px;
+    height: 2px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/minus.svg") no-repeat;
+  }
+
+  .accordion__title.active::after {
+    background: url("../img/plus.svg") no-repeat;
+    height: 16px;
+  }
+
+  .accordion__item {
+    border-bottom: 1px solid $border;
   }
 }

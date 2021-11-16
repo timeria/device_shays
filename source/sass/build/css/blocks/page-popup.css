@@ -1,13 +1,5 @@
+.page-popup .form__wrap {
+  width: 100%; }
+
 .page-popup {
-  position: fixed;
-  width: 728px;
-  max-width: 100%;
-  background: url("../img/popup-bg.jpg") left top no-repeat;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: flex-end; }
-  @media (min-resolution: 2dppx) {
-    .page-popup {
-      background-image: url("../img/popup-bg@2x.jpg"); } }
+  padding: 30px 40px 35px; }

@@ -10,6 +10,10 @@
 .logo__text {
   width: calc(100% - 68px);
   margin-top: 4px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 8px;
+  }
 }
 
 .logo__title {

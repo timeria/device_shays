@@ -3,6 +3,7 @@
   position: relative;
   width: 48%;
 }
+
 .personal span {
   font-size: 14px;
   line-height: 16px;
@@ -34,13 +35,13 @@
 }
 
 .personal span::after {
-   @include beforeAfter;
-   width: 9px;
-   height: 6px;
-   left: 4px;
-   top: 6px;
-   background: url('../img/personal.svg') no-repeat;
-   opacity: 0;
+  @include beforeAfter;
+  width: 9px;
+  height: 6px;
+  left: 4px;
+  top: 6px;
+  background: url('../img/personal.svg') no-repeat;
+  opacity: 0;
 }
 
 #personal:checked + span::after {

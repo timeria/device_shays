@@ -1,0 +1,55 @@
+.page-popup .form__wrap {
+  width: 100%;
+}
+
+.page-popup {
+  position: absolute;
+  width: 100%;
+  max-width: 490px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $blue;
+  z-index: 10;
+  padding: 30px 40px 35px;
+  display: none;
+}
+
+.page-popup__close {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+}
+
+.page-popup .form__title {
+  font-size: 28px;
+  line-height: 140.62%;
+}
+
+.page-popup .form__item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.page-popup button {
+  width: 100%;
+  max-width: 100%;
+}
+
+.page-popup .page-popup__close {
+  border: none;
+  width: 17px;
+  height: 17px;
+}
+
+.page-popup .personal {
+  width: 100%;
+}
+
+.page-popup textarea {
+  height: 104px;
+  margin-bottom: 30px;
+}

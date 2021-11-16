@@ -48,6 +48,8 @@ a {
 
 .page-body--active {
   overflow-y: hidden;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
 }
 
 .button {
@@ -63,10 +65,16 @@ a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  transition: all .3s;
 }
 
 .button--white {
   color: $white;
+}
+
+.button--white:hover {
+  background: $white;
+  color: $blue;
 }
 
 .button--blue {
@@ -74,9 +82,9 @@ a {
   border: 1px solid $blue;
 }
 
-.button:hover {
-  box-shadow: 0 0 10px 3px rgba(34, 60, 80, 0.2) inset;
+.button--blue:hover {
   color: $white;
+  background: $blue;
 }
 
 .button:focus {
@@ -108,4 +116,15 @@ a {
     font-size: 28px;
     line-height: 39px;
   }
+}
+
+.page-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $over;
+  opacity: 0.5;
+  display: none;
 }

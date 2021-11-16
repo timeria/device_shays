@@ -4,32 +4,37 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 25px 0 33px;
+    padding: 21px 0 35px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 45px 0 23px;
+    padding: 45px 0 26px;
   }
 }
 
 .page-footer__container {
-  max-width: 1410px;
+  max-width: 1460px;
   margin: 0 auto;
+  padding: 0 25px;
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
   }
 }
 
 .page-footer__desc {
   @media (max-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
     align-items: center;
     padding-bottom: 25px;
     border-bottom: 1px solid $border;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   @media (max-width: $mobile-width) {
@@ -37,12 +42,13 @@
     display: flex;
     justify-content: center;
     margin-bottom: 0;
+    padding-bottom: 49px;
   }
 }
 
 .page-footer__desc .logo {
   @media (max-width: $mobile-width) {
-    width: 203px
+    width: 216px
   }
 }
 
@@ -71,7 +77,7 @@
 
 @media (max-width: $tablet-width) {
   .page-footer__contact {
-    width: 50%;
+    width: 48%;
   }
 
   .page-footer__nav {
@@ -107,6 +113,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    margin: 28px 0 31px;
   }
 }
 
@@ -148,7 +155,7 @@
 
 .page-footer__wrap {
   display: grid;
-  max-width: 1440px;
+  max-width: 1460px;
   padding: 0 25px;
   margin: 0 auto;
 
@@ -158,6 +165,11 @@
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+    display: block;
   }
 }
 
@@ -180,6 +192,15 @@
 .page-footer__bottom {
   padding: 14px 0;
   border-top: 1px solid $border;
+
+  @media (max-width: $tablet-width) {
+    padding: 23px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    border: none;
+    padding: 4px 0;
+  }
 }
 
 .page-footer__item a,
@@ -196,14 +217,28 @@
   @media (min-width: $desktop-width) {
     text-align: center;
   }
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }
 
 .page-footer__item:nth-child(3) {
   text-align: right;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }
 
 .page-footer__item--copyright {
   @media (max-width: $tablet-width) {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__item:last-child {
+    margin-top: 20px;
   }
 }
