@@ -21,7 +21,7 @@
     height: 258px;
     right: 25px;
     top: 390px;
-    background: url('../img/tr-left.png') no-repeat;
+    background: url("../img/tr-left.png") no-repeat;
     transform: rotate(180deg);
     z-index: -1;
   }
@@ -32,7 +32,7 @@
     height: 258px;
     left: -170px;
     top: -60px;
-    background: url('../img/tr-left.png') no-repeat;
+    background: url("../img/tr-left.png") no-repeat;
     z-index: -1;
   }
 }
@@ -91,7 +91,7 @@
   border-left-color: $blue;
   min-height: 299px;
   background: $white;
-  transition: background .3s;
+  transition: background 0.3s;
 
   @media (min-width: $desktop-width) {
     width: 48.7%;
@@ -101,7 +101,6 @@
 
   @media (max-width: $tablet-width) {
     width: 47.7%;
-    padding: 25px;
     min-height: 232px;
     padding: 22px 19px 22px 24px;
   }
@@ -119,7 +118,7 @@
   cursor: pointer;
 }
 
-.about__item:hover svg path{
+.about__item:hover svg path {
   fill: $white;
 }
 
@@ -155,7 +154,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .about__item:nth-child(2) {
+  .about__item--2 {
     padding: 25px 19px 22px 17px;
   }
 }

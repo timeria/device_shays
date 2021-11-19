@@ -44,7 +44,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    right: auto;
     right: -6px;
     top: 93px;
   }
@@ -174,6 +173,7 @@
   padding: 18px 47px 17px;
   color: $white;
   display: inline-block;
+  vertical-align: top;
 
   @media (max-width: $tablet-width) {
     margin-left: 52px;
@@ -197,23 +197,13 @@
 .banner__img.decor::before {
   @media (min-width: $desktop-width) {
     left: 5px;
-  }
-}
-
-.banner__img.decor::after {
-  @media (min-width: $desktop-width) {
-    left: -25px;
-  }
-}
-
-.banner__img.decor::before {
-  @media (min-width: $desktop-width) {
     top: 17px;
   }
 }
 
 .banner__img.decor::after {
   @media (min-width: $desktop-width) {
+    left: -25px;
     bottom: 12px;
   }
 }

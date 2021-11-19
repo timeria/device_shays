@@ -59,13 +59,14 @@ a {
   font-size: 14px;
   line-height: 16px;
   cursor: pointer;
-  transition: all 0.3s;
   border: 1px solid $white;
   padding: 14px 32px 13px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
-  transition: all .3s;
+  transition: all 0.3s;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .button--white {

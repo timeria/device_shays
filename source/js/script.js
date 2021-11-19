@@ -1,15 +1,21 @@
 window.addEventListener('DOMContentLoaded' , () => {
 
+  const MOBILE = 768;
+  const KEYE = 27;
+  const KEYS = 47;
+  const KEYT = 58;
+
   const popupBlock = document.querySelector('.page-overlay');
   const popupForm = document.querySelector('.page-popup');
   const popupButton = document.querySelector('.button--popup');
   const body = document.querySelector('.page');
 
-  if(popupForm && (window.screen.width > 1023) ) {
+  if(popupForm) {
     const popupClose = document.querySelector('.page-popup__close');
     const inputName = popupForm.querySelector('#user_name1');
 
-    popupButton.addEventListener('click', () => {
+    popupButton.addEventListener('click', (e) => {
+      e.preventDefault();
       popupBlock.style.display = "block";
       popupForm.style.display = "block";
       body.classList.add('page-body--active');
@@ -30,7 +36,7 @@ window.addEventListener('DOMContentLoaded' , () => {
   };
 
   document.addEventListener('keyup', (e)  => {
-    if (e.keyCode === 27) {
+    if (e.keyCode === KEYE) {
       popupBlock.style.display = "none";
       popupForm.style.display = "none";
       body.classList.remove('page-body--active');
@@ -109,34 +115,33 @@ window.addEventListener('DOMContentLoaded' , () => {
   }
 
   //Аккордион
-  if(window.screen.width < 768) {
-    const accordBlock = document.querySelector('.accordion');
 
-    if(accordBlock) {
-      const acc = accordBlock.querySelectorAll(".accordion__title");
-      const accC = accordBlock.querySelectorAll(".accordion__content");
-      accC.forEach(item => {
-        item.style.display = "none";
-      })
+  const accordBlock = document.querySelector('.accordion');
 
-      acc.forEach(item => {
-        item.classList.toggle("active");
-      })
+  if(accordBlock && window.screen.width < MOBILE) {
+    const acc = accordBlock.querySelectorAll('.accordion__title');
+    const accC = accordBlock.querySelectorAll('.accordion__content');
+    accC.forEach(item => {
+      item.style.display = 'none';
+    })
 
-      for (let i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
+    acc.forEach(item => {
+      item.classList.toggle('active');
+    })
 
-          this.classList.toggle("active");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener('click', function() {
 
-          /* Toggle between hiding and showing the active panel */
-          let panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
+        this.classList.toggle('active');
+
+        /* Toggle between hiding and showing the active panel */
+        let panel = this.nextElementSibling;
+        if (panel.style.display === 'block') {
+          panel.style.display = 'none';
+        } else {
+          panel.style.display = 'block';
+        }
+      });
     }
   }
 
@@ -146,7 +151,7 @@ window.addEventListener('DOMContentLoaded' , () => {
       event.keyCode && (keyCode = event.keyCode);
       let pos = this.selectionStart;
       if (pos < 3) event.preventDefault();
-      let matrix = "+7 (___) ___ ____",
+      let matrix = '+7 (___) ___ ____',
       i = 0,
       def = matrix.replace(/\D/g, ""),
       val = this.value.replace(/\D/g, ""),
@@ -163,7 +168,7 @@ window.addEventListener('DOMContentLoaded' , () => {
           return "\\d{1," + a.length + "}"
         }).replace(/[+()]/g, "\\$&");
       reg = new RegExp("^" + reg + "$");
-      if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+      if (!reg.test(this.value) || this.value.length < 5 || keyCode > KEYS && keyCode < KEYT) this.value = new_value;
       if (event.type == "blur" && this.value.length < 5)  this.value = ""
     }
 

@@ -85,7 +85,6 @@
 
 .form__wrap textarea {
   width: 100%;
-  border: none;
   background: $input;
   font-size: 16px;
   line-height: 22px;
@@ -205,4 +204,23 @@
   @media (max-width: $mobile-width) {
     display: block;
   }
+}
+
+.form__img {
+  width: 511px;
+  height: 288px;
+  display: block;
+  background: url("../img/air.png") no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+.form__decor.decor::after {
+  bottom: -20px;
+  z-index: 1;
+}
+
+.form__decor.decor::before {
+  top: -57px;
+  z-index: 1;
 }

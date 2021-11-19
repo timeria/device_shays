@@ -1,6 +1,7 @@
 .decor {
   position: relative;
-  padding: 57px 0 0 0;
+  padding: 0;
+  margin-top: 57px;
 }
 
 .decor::before {
@@ -9,7 +10,7 @@
   height: 486px;
   top: 0;
   left: -125px;
-  background: url('../img/triangl-b.png') no-repeat;
+  background: url("../img/triangl-b.png") no-repeat;
   z-index: 1;
 
   @media (max-width: $tablet-width) {
@@ -36,7 +37,7 @@
   height: 288px;
   bottom: -27px;
   left: -181px;
-  background: url('../img/triangl.png') no-repeat;
+  background: url("../img/triangl.png") no-repeat;
   z-index: 1;
 
   @media (max-width: $tablet-width) {
@@ -56,6 +57,7 @@
     right: -93px;
   }
 }
+
 .decor__img {
   z-index: 2;
   position: relative;
