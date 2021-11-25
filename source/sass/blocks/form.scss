@@ -41,6 +41,10 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 15px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .form__wrap {
@@ -52,6 +56,7 @@
 .form__decor {
   @media (min-width: $desktop-width) {
     width: 41%;
+    margin-top: 54px;
   }
 
   @media (max-width: $tablet-width) {
@@ -92,6 +97,7 @@
   padding: 13px 16px;
   border: none;
   transition: all 0.3s;
+  resize: none;
 
   &::-moz-placeholder {
     color: $white;
@@ -132,6 +138,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    order: 2;
   }
 }
 
@@ -147,7 +154,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 0 28px;
+    margin: 0 0 26px;
   }
 }
 
@@ -166,6 +173,10 @@
 
 .form__item {
   width: 48%;
+
+  @media (max-width: $tablet-width) {
+    width: 47%;
+  }
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -189,6 +200,10 @@
   @media (max-width: $tablet-width) {
     max-width: 281px;
   }
+
+  @media (max-width: $mobile-width) {
+    max-width: 290px;
+  }
 }
 
 .form__wrap button:hover {
@@ -200,10 +215,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row-reverse;
 
   @media (max-width: $mobile-width) {
-    display: block;
+    flex-wrap: wrap;
   }
+}
+
+.form__bottom--popup {
+  flex-wrap: wrap;
 }
 
 .form__img {
@@ -213,6 +233,11 @@
   background: url("../img/air.png") no-repeat;
   position: relative;
   z-index: 2;
+
+  @media (max-width: 1100px) {
+    background-size: contain;
+    max-width: 100%;
+  }
 }
 
 .form__decor.decor::after {
@@ -223,4 +248,14 @@
 .form__decor.decor::before {
   top: -57px;
   z-index: 1;
+}
+
+.form__bottom .form__item {
+  @media (max-width: $tablet-width) {
+    width: 48%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }

@@ -1,32 +1,6 @@
-.logo {
-  display: flex;
-}
-
-.logo__img {
-  margin-right: 16px;
-  width: 52px;
-}
-
-.logo__text {
-  width: calc(100% - 68px);
-  margin-top: 4px;
-
-  @media (max-width: $mobile-width) {
-    margin-top: 8px;
+@media (max-width: $mobile-width) {
+  .logo img {
+    width: 38px;
+    height: 38px;
   }
-}
-
-.logo__title {
-  font-size: 25px;
-  line-height: 29px;
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
-}
-
-.logo__desc {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: $grey;
-  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
 }

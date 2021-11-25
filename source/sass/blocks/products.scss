@@ -30,9 +30,10 @@
 
 .products__title {
   color: $white;
+  margin-bottom: 47px;
 
-  @media (min-width: $tabletstart-width) {
-    margin-bottom: 47px;
+  @media (max-width: $tablet-width) {
+    max-width: 613px;
   }
 
   @media (max-width: $mobile-width) {
@@ -64,6 +65,10 @@
     &:nth-child(3n + 3) {
       margin-right: 0;
     }
+  }
+
+  @media (max-width: 1200px) {
+    width: 29.5%;
   }
 
   @media (max-width: $tabletbig-width) {

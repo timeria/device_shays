@@ -33,30 +33,31 @@
 }
 
 @media (max-width: $mobile-width) {
-  .accordion__content.active {
-    display: block;
-  }
-
   .accordion__content {
     padding: 0 15px 25px;
+    display: none;
   }
 
   .accordion__title::after {
     @include beforeAfter;
     width: 16px;
-    height: 2px;
+    height: 16px;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    background: url("../img/minus.svg") no-repeat;
+    background: url("../img/plus.svg") no-repeat;
   }
 
-  .accordion__title.active::after {
-    background: url("../img/plus.svg") no-repeat;
-    height: 16px;
+  .accordion__item--active .accordion__title::after {
+    background: url("../img/minus.svg") no-repeat;
+    height: 2px;
   }
 
   .accordion__item {
     border-bottom: 1px solid $border;
+  }
+
+  .accordion__item--active .accordion__content {
+    display: block;
   }
 }

@@ -46,7 +46,7 @@ a {
   grid-template-rows: 1fr auto;
 }
 
-.page-body--active {
+.page-body--active .page-body {
   overflow-y: hidden;
   margin-left: calc(100vw - 100%);
   margin-right: 0;

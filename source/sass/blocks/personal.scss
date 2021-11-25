@@ -22,16 +22,17 @@
   left: 0;
   top: 0;
   z-index: 1;
+  cursor: pointer;
 }
 
-.personal::before {
+.personal span::before {
   @include beforeAfter;
   border: 1px solid $white;
   opacity: 0.8;
-  width: 16px;
+  width: 18px;
   height: 16px;
   left: 0;
-  top: 0;
+  top: 3px;
 }
 
 .personal span::after {
@@ -46,4 +47,8 @@
 
 .personal input:checked + span::after {
   opacity: 1;
+}
+
+.personal input:focus + span::before {
+  border-color: $black;
 }

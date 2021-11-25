@@ -39,14 +39,24 @@
   max-width: 100%;
 }
 
-.page-popup .page-popup__close {
-  border: none;
-  width: 17px;
-  height: 17px;
+.page-popup .personal {
+  order: 2;
+  width: 100%;
 }
 
-.page-popup .personal {
-  width: 100%;
+.page-popup .page-popup__close {
+  border: none;
+  width: 22px;
+  height: 20px;
+  padding: 0;
+}
+
+.page-popup .page-popup__close:hover {
+  background: transparent;
+}
+
+.page-popup .page-popup__close:focus {
+  border: 1px solid $black;
 }
 
 .page-popup textarea {

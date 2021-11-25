@@ -92,11 +92,15 @@
   min-height: 299px;
   background: $white;
   transition: background 0.3s;
+  margin-right: 30px;
 
   @media (min-width: $desktop-width) {
     width: 48.7%;
-    margin-right: 30px;
     padding: 40px 33px 58px 46px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 48.3%;
   }
 
   @media (max-width: $tablet-width) {
@@ -118,8 +122,9 @@
   cursor: pointer;
 }
 
-.about__item:hover svg path {
+.about__item:hover svg {
   fill: $white;
+  stroke: $white;
 }
 
 @media (min-width: $tabletstart-width) {
@@ -155,7 +160,12 @@
 
 @media (max-width: $mobile-width) {
   .about__item--2 {
-    padding: 25px 19px 22px 17px;
+    padding: 22px 19px 22px 17px;
+    min-height: 310px;
+  }
+
+  .about__item--2 h4 {
+    margin: 8px 0;
   }
 }
 
@@ -173,6 +183,10 @@
 
 .about__company {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+  }
 }
 
 .about__img {
@@ -231,7 +245,7 @@
 }
 
 .about__text .button {
-  margin-top: 12px;
+  margin-top: 16px;
   padding: 14px 49px 13px;
 
   @media (max-width: $tablet-width) {

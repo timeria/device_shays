@@ -4,7 +4,7 @@
 
   @media (min-width: $desktop-width) {
     height: 878px;
-    padding-top: 258px;
+    padding-top: 263px;
   }
 
   @media (max-width: $tablet-width) {
@@ -36,6 +36,7 @@
 
 .banner__img.decor {
   padding-top: 0;
+  z-index: 1;
 
   @media (max-width: $tablet-width) {
     position: absolute;
@@ -46,10 +47,15 @@
   @media (max-width: $mobile-width) {
     right: -6px;
     top: 93px;
+    margin-top: 0;
   }
 }
 
 .banner__img .decor__img {
+  @media (min-width: $desktop-width) {
+    right: -11px;
+  }
+
   @media (max-width: $tablet-width) {
     height: 340px;
     width: auto;
@@ -73,6 +79,8 @@
 
 .banner__text {
   color: $white;
+  position: relative;
+  z-index: 2;
 
   @media (min-width: $desktop-width) {
     margin-top: 33px;
@@ -139,8 +147,8 @@
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
-    line-height: 28px;
-    margin: 0 0 35px;
+    line-height: 26px;
+    margin: 0 0 40px;
   }
 }
 
@@ -183,7 +191,7 @@
   @media (max-width: $mobile-width) {
     font-size: 0;
     margin-left: 0;
-    padding: 18px 32px 12px;
+    padding: 16px 32px 12px;
     width: 100%;
     max-width: 287px;
   }
@@ -196,15 +204,17 @@
 
 .banner__img.decor::before {
   @media (min-width: $desktop-width) {
-    left: 5px;
+    left: auto;
+    right: 43px;
     top: 17px;
   }
 }
 
 .banner__img.decor::after {
   @media (min-width: $desktop-width) {
-    left: -25px;
-    bottom: 12px;
+    left: auto;
+    right: 323px;
+    bottom: 23px;
   }
 }
 

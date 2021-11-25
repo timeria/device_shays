@@ -29,6 +29,14 @@
 }
 
 .page-header__contacts {
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 182px);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   @media (max-width: $tablet-width) {
     margin-top: 10px;
   }
@@ -38,24 +46,35 @@
   }
 }
 
+.page-header__links {
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 200px);
+    text-align: right;
+  }
+}
+
 .page-header__contacts a {
   color: $white;
-  display: inline-block;
-  vertical-align: middle;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .page-header__contacts span {
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 18px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 3px;
+    margin-left: 6px;
   }
 
   @media (max-width: $tablet-width) {
     display: none;
   }
+}
+
+.page-header__links a:hover {
+  opacity: 0.8;
 }
 
 .page-header__phone svg {
@@ -73,9 +92,7 @@
 }
 
 .page-header__mail {
-  @media (max-width: $tablet-width) {
-    margin-right: 25px;
-  }
+  margin-right: 30px;
 
   @media (max-width: $mobile-width) {
     margin-right: 18px;
@@ -89,7 +106,7 @@
 
 .page-header__phone {
   @media (min-width: $desktop-width) {
-    margin: 0 40px 0 88px;
+    margin: 0 50px 0 54px;
   }
 }
 
