@@ -132,7 +132,7 @@ window.addEventListener('DOMContentLoaded' , () => {
       item.classList.remove('accordion__item--active');
       item.addEventListener('click', function() {
         if(this.classList.contains('accordion__item--active')) {
-           this.classList.remove('accordion__item--active');
+          this.classList.remove('accordion__item--active');
         } else {
           for(el of accordions) {
             el.classList.remove('accordion__item--active');
