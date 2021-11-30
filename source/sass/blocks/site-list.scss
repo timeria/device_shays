@@ -10,11 +10,3 @@
 .site-list__link:focus {
   opacity: 1;
 }
-
-.site-list__item {
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-    vertical-align: top;
-    width: 49%;
-  }
-}

@@ -1,6 +1,6 @@
 .main-nav__list {
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+     column-count: 2;
+     column-gap: 0;
   }
 }

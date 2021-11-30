@@ -153,7 +153,7 @@ a {
   display: flex; }
   @media (min-width: 1024px) {
     .page-header {
-      padding-top: 33px; } }
+      padding-top: 35px; } }
   @media (max-width: 1023px) {
     .page-header {
       padding-top: 20px; } }
@@ -182,11 +182,13 @@ a {
 
 @media (min-width: 1024px) {
   .page-header__links {
-    width: calc(100% - 200px);
+    width: calc(100% - 254px);
     text-align: right; } }
 
 .page-header__contacts a {
-  color: #ffffff; }
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle; }
   @media (min-width: 1024px) {
     .page-header__contacts a {
       margin-bottom: 10px; } }
@@ -215,7 +217,7 @@ a {
     height: 19px; } }
 
 .page-header__mail {
-  margin-right: 30px; }
+  margin-right: 24px; }
   @media (max-width: 767px) {
     .page-header__mail {
       margin-right: 18px; } }
@@ -226,10 +228,11 @@ a {
 
 @media (min-width: 1024px) {
   .page-header__phone {
-    margin: 0 50px 0 54px; } }
+    margin: 0 0 0 54px; } }
 
 .page-header__contacts .button {
-  padding: 14px 26px 13px; }
+  padding: 14px 26px 13px;
+  margin-left: 54px; }
   @media (max-width: 1023px) {
     .page-header__contacts .button {
       display: none; } }
@@ -439,7 +442,7 @@ a {
   color: #ffffff; }
   @media (min-width: 1024px) {
     .form {
-      padding: 94px 0 114px; } }
+      padding: 90px 0 114px; } }
   @media (max-width: 1023px) {
     .form {
       padding: 83px 0 103px; } }
@@ -814,7 +817,7 @@ a {
   .page-footer__contact {
     width: 34%; }
   .page-footer__nav {
-    width: 60%; } }
+    width: 62%; } }
 
 @media (max-width: 1023px) {
   .page-footer__contact {
@@ -1051,12 +1054,6 @@ a {
 .site-list__link:hover,
 .site-list__link:focus {
   opacity: 1; }
-
-@media (min-width: 1024px) {
-  .site-list__item {
-    display: inline-block;
-    vertical-align: top;
-    width: 49%; } }
 
 .about {
   position: relative; }
@@ -1403,7 +1400,9 @@ a {
   background: #00b2ff;
   z-index: 10;
   padding: 30px 40px 35px;
-  display: none; }
+  display: none;
+  max-height: 100vh;
+  overflow-y: auto; }
 
 .page-popup__close {
   display: block;
@@ -1447,7 +1446,9 @@ a {
 
 @media (min-width: 1024px) {
   .main-nav__list {
-    display: flex;
-    flex-wrap: wrap; } }
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 0;
+         column-gap: 0; } }
 
 /*# sourceMappingURL=style.min.css.map */
